@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+        nodejs "nodejs"
+    }
+
     stages {
         stage('Install Packages') {
             steps {
@@ -27,6 +31,7 @@ pipeline {
             }
         }
 
+        // Uncomment the cleanup stage if necessary
         // stage('Cleanup') {
         //     steps {
         //         script {
