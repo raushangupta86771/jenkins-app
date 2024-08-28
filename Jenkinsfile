@@ -5,7 +5,7 @@ pipeline {
         stage('Install Packages') {
             steps {
                 script {
-                    sh 'npm install'
+                    sh 'yarn install'
                 }
             }
         }
@@ -13,7 +13,7 @@ pipeline {
         stage('Run the App') {
             steps {
                 script {
-                    sh 'node app.js &'
+                    sh 'yarn start &'
                     sleep 5
                 }
             }
