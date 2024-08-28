@@ -18,7 +18,7 @@ pipeline {
             steps {
                 script {
                     sh 'yarn start &'
-                    sleep 5
+                    sleep 10
                 }
             }
         }
@@ -30,14 +30,5 @@ pipeline {
                 }
             }
         }
-
-        // Uncomment the cleanup stage if necessary
-        // stage('Cleanup') {
-        //     steps {
-        //         script {
-        //             sh 'pkill -f "node"'
-        //         }
-        //     }
-        // }
     }
 }
