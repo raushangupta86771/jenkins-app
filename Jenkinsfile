@@ -27,12 +27,12 @@ pipeline {
             }
         }
 
-        stage('Cleanup') {
-            steps {
-                script {
-                    sh 'pkill -f "node"'
-                }
-            }
-        }
+        // stage('Cleanup') {
+        //     steps {
+        //         script {
+        //             sh 'pkill -f "node"'
+        //         }
+        //     }
+        // }
     }
 }
