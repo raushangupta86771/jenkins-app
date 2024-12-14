@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
 
-console.log("2 commit")
+console.log("3 commit")
 
 app.get('/health', (req, res) => res.send('App is running'));
 
